@@ -1,13 +1,18 @@
-﻿using Sales.Common.Models;
-using System.Collections.ObjectModel;
-
-namespace Sales.ViewModels
+﻿namespace Sales.ViewModels
 {
+    using Sales.Common.Models;
+    using System.Collections.ObjectModel;
 
-    public class ProductsViewModel
+    public class ProductsViewModel : BaseViewModel
     {
+        private ApiService apiService;
 
-        public ObservableCollection<Product> Products { get; set; }
+        private ObservableCollection<Product> products;
 
-    }
+        public ObservableCollection<Product> Products
+        {
+            get { return this.products; }
+            set { this.SetValue(ref this.products, value); }
+        }
+    } 
 }

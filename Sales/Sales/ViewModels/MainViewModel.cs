@@ -7,7 +7,7 @@
 
         public MainViewModel()
         {
-            this.Products = new ProductsViewModel);
+            this.Products = new ProductsViewModel();
               
         }
 

@@ -7,7 +7,7 @@
         <StackLayout BindingContext="{Binding Products}" >
 
             <ListView
-                ItemsSource="{Binding Product}">
+                ItemsSource="{Binding Products}">
                 
             </ListView>
             

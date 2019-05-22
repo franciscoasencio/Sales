@@ -27,7 +27,8 @@
 
         private async void LoadProducts()
         {
-            var response = await this.apiService.GetList<Product>("http://fasencio.somee.com/Sales/API", "/API","/Products");
+                                                                 //http://fasencio.somee.com/Sales/API/API/Products
+            var response = await this.apiService.GetList<Product>("http://fasencio.somee.com/Sales/API/", "API", "/Products");
             if (!response.IsSuccess)
             {
                 await Application.Current.MainPage.DisplayAlert("Error", response.Message, "Accept");

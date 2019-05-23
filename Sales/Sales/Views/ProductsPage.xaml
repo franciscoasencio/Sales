@@ -25,6 +25,7 @@
                                 </Label>
                                 <Label
                                     Grid.Column="1"
+                                    FontSize="Medium"
                                     HorizontalOptions="End"
                                     Text="{Binding Price , StringFormat='{0:N0}' }">
                                 </Label>

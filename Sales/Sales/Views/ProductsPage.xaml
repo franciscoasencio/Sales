@@ -21,12 +21,10 @@
                                 </Grid.ColumnDefinitions>
                                 <Label
                                     Grid.Column="0"
-                                    FontSize="Micro"
                                     Text="{Binding Description}">
                                 </Label>
                                 <Label
                                     Grid.Column="1"
-                                    FontSize="Micro"
                                     HorizontalOptions="End"
                                     Text="{Binding Price , StringFormat='{0:N0}' }">
                                 </Label>
